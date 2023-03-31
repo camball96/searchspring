@@ -5,25 +5,33 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import Product from "../../../assets/product1.jpg";
 
-export default function MediaCard() {
+export default function MediaCard({ product }) {
   return (
     <div>
       <Card sx={{ maxWidth: 345 }} style={{ margin: "2%" }}>
-        <CardMedia sx={{ height: 200 }} image={Product} title="green iguana" />
+        <CardMedia
+          sx={{ height: 350 }}
+          image={product.thumbnailImageUrl}
+          title={product.title}
+        />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            {product.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            {product.msrp > product.price ? (
+              <span style={{ textDecoration: "line-through" }}>
+                ${product.msrp}
+              </span>
+            ) : (
+              ""
+            )}{" "}
+            ${product.price}
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">Share</Button>
-          <Button size="small">Learn More</Button>
+          <Button size="small">Add To Cart</Button>
         </CardActions>
       </Card>
     </div>
