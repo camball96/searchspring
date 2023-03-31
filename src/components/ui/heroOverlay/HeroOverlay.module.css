@@ -1,0 +1,6 @@
+.overlay {
+  margin-top: -700px;
+  height: 700px;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.103);
+}

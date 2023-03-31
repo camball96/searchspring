@@ -1,0 +1,12 @@
+.header {
+  background-color: rgb(247, 247, 247);
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  padding: 0 3%;
+  justify-content:left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  z-index: 99;
+}

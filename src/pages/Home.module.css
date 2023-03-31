@@ -1,0 +1,22 @@
+.productSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 3%;
+}
+
+.searchbarSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 0
+}
+
+
+.productCards {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
