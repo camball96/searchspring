@@ -1,0 +1,22 @@
+.ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  width: auto;
+}
+
+.li {
+  list-style: none;
+  margin: 0 3%;
+}
+
+.a {
+  cursor: pointer;
+  color: var(--text-color-gg);
+  transition: 300ms;
+}
+
+.a:hover{
+  color: rgb(249, 249, 249);
+}

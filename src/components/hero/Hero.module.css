@@ -2,10 +2,29 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  padding: 0 5%;
   height: 700px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #e9cfca;
+}
+
+.h1 {
+  font-size: 30px;
+  color: var(--text-color-gg);
+  font-weight: 600;
+  padding: 0;
+  margin:  0;
+  border-bottom: 3px solid var(--text-color-gg);
+  border-radius: 1px;
+}
+
+.h2 {
+  font-size: 80px;
+  color: var(--text-color-gg);
+  margin: 2% 0 3%;
+  padding: 0;
 }
 

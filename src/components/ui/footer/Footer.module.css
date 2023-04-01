@@ -1,0 +1,16 @@
+.footer {
+  background-color: var(--text-color-gg);
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  padding: 0 3%;
+  justify-content:space-between;
+  height: 200px;
+}
+
+.footerComponents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
