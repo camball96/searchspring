@@ -1,5 +1,6 @@
 :root {
   --text-color-gg: #313135;
+  --bg-color-pink: #e9cfca
 }
 
 
@@ -15,4 +16,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+label {
+  color: var(--text-color-gg) !important;
 }

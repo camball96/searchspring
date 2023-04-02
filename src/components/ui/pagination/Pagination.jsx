@@ -1,12 +1,24 @@
 import React from "react";
+import Btn from "../btn/Btn";
+import styles from "./Pagination.module.css";
 
 function Pagination({ increaseCount, decreaseCount, products, page }) {
   return (
-    <>
-      {page > 1 && <button onClick={decreaseCount}>Prev</button>}
-      <span className="justify-center	text-center	"> {page} </span>
-      {page < products.length && <button onClick={increaseCount}>Next</button>}
-    </>
+    <div className={styles.pagSection}>
+      <div className={styles.pagContainer}>
+        {page > 1 && (
+          <button className={styles.pagBtn} onClick={decreaseCount}>
+            &lt;
+          </button>
+        )}
+        <span className={styles.pageNo}> {page} </span>
+        {page < products.length && (
+          <button className={styles.pagBtn} onClick={increaseCount}>
+            &gt;
+          </button>
+        )}
+      </div>
+    </div>
   );
 }
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Hero from "../components/hero/Hero";
-import MediaCard from "../components/MediaCard/MediaCard";
+import PCard from "../components/pCard/PCard";
 import Searchbar from "../components/searchbar/Searchbar";
 import Pagination from "../components/ui/pagination/Pagination";
 import styles from "./Home.module.css";
@@ -66,6 +66,9 @@ function Home() {
     <div>
       <Hero />
       <div className={styles.productSection}>
+        <div className={styles.shopHeading}>
+          <h2 className={styles.h2}>shop our style &darr;</h2>
+        </div>
         <div className={styles.searchbarSection}>
           <Searchbar
             {...{
@@ -77,15 +80,19 @@ function Home() {
             }}
           />
         </div>
-        <Pagination {...{ increaseCount, decreaseCount, products, page }} />
-        <div className={styles.productCards} id="products">
+        <div className={styles.topPag}>
+          <Pagination {...{ increaseCount, decreaseCount, products, page }} />
+        </div>
+        <div className={styles.productList} id="products">
           {/* I had to slice here as there was a weird bug occuring on the initial fetch where different
           amounts of products were returned than what was requested. This at least will stop that from occuring. */}
-          {products.slice(0, 8).map((product) => {
-            return <MediaCard key={product.id} product={product} />;
+          {products.slice(0, 9).map((product) => {
+            return <PCard key={product.id} product={product} />;
           })}
         </div>
-        <Pagination {...{ increaseCount, decreaseCount, products, page }} />
+        <div className={styles.btmPag}>
+          <Pagination {...{ increaseCount, decreaseCount, products, page }} />
+        </div>
       </div>
     </div>
   );

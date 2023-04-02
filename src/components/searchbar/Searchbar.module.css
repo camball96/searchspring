@@ -1,0 +1,32 @@
+.querySection {
+  display: flex;
+  flex-direction: row;
+}
+
+.clearBtnSection {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 4%;
+  margin-left: -4%;
+  z-index: 3;
+}
+
+.searchBtnSection {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-left: 2%;
+}
+
+.clearBtn {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: var(--text-color-gg);
+  margin-right: 10px;
+  cursor: pointer;
+}
+

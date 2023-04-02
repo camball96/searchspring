@@ -14,7 +14,7 @@ function Hero() {
           brightening life with <br />
           beautiful, stylish design
         </h2>
-        <Btn>Shop Now</Btn>
+        <Btn>shop now</Btn>
       </div>
     </div>
   );
