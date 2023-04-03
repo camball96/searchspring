@@ -1,5 +1,3 @@
-# Getting Started with Create React App
-
 # Searchy Search Page #
 This is a modern, minimal designed landing product page built using React and MUI. The page features a simple search bar with a search button next to it, allowing users to easily search for products using the Searchspring API. The clean and minimal design puts the focus on the search functionality and search results, making it easy for users to find what they're looking for.
 
