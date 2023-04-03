@@ -3,10 +3,10 @@ import styles from "./Hero.module.css";
 import Btn from "../ui/btn/Btn";
 
 function Hero() {
-  const [bgColor, setBgColor] = useState("#e9cfca;");
+  const [bgColor, setBgColor] = useState("#e9cfca");
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    setInterval(() => {
       setBgColor(() => {
         const colors = ["#e9cfca", "#F5E5FC", "#B28B84", "#9CB380"];
         const randomColor = colors[Math.floor(Math.random() * colors.length)];
