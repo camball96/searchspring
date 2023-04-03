@@ -7,8 +7,8 @@ In addition to the search bar, the page includes pagination with next and previo
 To get started, you need to clone the repository and install the necessary dependencies.
 
 ``` bash
-git clone https://github.com/{your-github-username}/{your-repo-name}.git
-cd {your-repo-name}
+git clone https://github.com/camball96/searchspring.git
+cd searchspring
 npm install 
 ```
 
