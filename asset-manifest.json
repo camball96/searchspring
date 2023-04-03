@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/searchspring/static/css/main.8ffb6f8b.css",
+    "main.css": "/searchspring/static/css/main.d184070d.css",
     "main.js": "/searchspring/static/js/main.c0cafef4.js",
     "index.html": "/searchspring/index.html",
-    "main.8ffb6f8b.css.map": "/searchspring/static/css/main.8ffb6f8b.css.map",
+    "main.d184070d.css.map": "/searchspring/static/css/main.d184070d.css.map",
     "main.c0cafef4.js.map": "/searchspring/static/js/main.c0cafef4.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ffb6f8b.css",
+    "static/css/main.d184070d.css",
     "static/js/main.c0cafef4.js"
   ]
 }
