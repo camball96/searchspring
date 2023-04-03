@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Searchy Landing Page #
+This is a modern, minimal designed landing product page built using React and MUI. The page features a simple search bar with a search button next to it, allowing users to easily search for products using the Searchspring API. The clean and minimal design puts the focus on the search functionality and search results, making it easy for users to find what they're looking for.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In addition to the search bar, the page includes pagination with next and previous buttons, allowing users to easily navigate through search results. The use of MUI and React Icons provides a modern and intuitive user interface, while the integration with Axios and the Searchspring API ensures that the search functionality is fast and reliable.
 
-## Available Scripts
+## Getting Started ##
+To get started, you need to clone the repository and install the necessary dependencies.
 
-In the project directory, you can run:
+``` bash
+git clone https://github.com/camball96/searchspring.git
+cd searchspring
+npm install 
+```
 
-### `npm start`
+Once you have installed the dependencies, you can start the development server by running the following command:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+``` bash
+npm start
+```
+This will start the development server and open the app in your default browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage ##
+To use the search page, simply enter your search query into the search bar and hit enter or click the search button. The app will display the search results below the search bar.
 
-### `npm test`
+The app displays the product image using the "thumbnailImageUrl", the product "name" and "price". If the product has an "msrp" field and it's greater than "price" field, the app displays the "msrp" next to the price crossed out.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The app also includes pagination with next and previous buttons. You can change the page by clicking on the next or previous button. If you're on the first page, the previous button is disabled. If you're on the last page, the next button is disabled.
 
-### `npm run build`
+## Technologies Used ##
+The app was built using the following technologies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* React
+* MUI
+* React Icons
+* Axios
+* Searchspring API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Acknowledgments ##
+I would like to thank the team at Searchspring for providing the API and documentation used to build this search page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Deployed Page ##
+You can view the site live at the following link - [Searchy](https://camball96.github.io/searchspring/)
