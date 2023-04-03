@@ -12,6 +12,7 @@
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   border-radius: 10px;
   transition: 300ms;
+  -webkit-transition: 300ms;
   cursor: pointer;
 }
 
@@ -57,3 +58,13 @@
 }
 
 
+@media only screen and (max-width: 768px) {
+  .card {
+    margin: 5%;
+    transition: .5s;
+  }
+  .card:hover {
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+  }
+}

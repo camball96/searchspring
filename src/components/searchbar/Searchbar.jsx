@@ -9,6 +9,9 @@ const CustomTextField = styled(TextField)({
   "& .MuiInput-underline:after": {
     borderBottomColor: "var(--text-color-gg)",
   },
+  "@media (max-width: 768px)": {
+    width: "300px",
+  },
 });
 
 function Searchbar({
@@ -21,26 +24,29 @@ function Searchbar({
   return (
     <div className={styles.querySection}>
       <>
-        <CustomTextField
-          // Basic styling for textfield
-          sx={{
-            width: 500,
-            maxWidth: "100%",
-          }}
-          fullWidth
-          id="standard-basic"
-          label="Search"
-          variant="standard"
-          onChange={inputHandler}
-          value={inputValue}
-          // Handles input submission when the enter key is pressed
-          onKeyPress={enterHandler}
-        />
-        <div className={styles.clearBtnSection}>
-          <button className={styles.clearBtn} onClick={clearInput}>
-            X
-          </button>
+        <div className={styles.searchArea}>
+          <CustomTextField
+            // Basic styling for textfield
+            sx={{
+              width: 500,
+              maxWidth: "100%",
+            }}
+            fullWidth
+            id="standard-basic"
+            label="Search"
+            variant="standard"
+            onChange={inputHandler}
+            value={inputValue}
+            // Handles input submission when the enter key is pressed
+            onKeyPress={enterHandler}
+          />
+          <div className={styles.clearBtnSection}>
+            <button className={styles.clearBtn} onClick={clearInput}>
+              X
+            </button>
+          </div>
         </div>
+
         <div className={styles.searchBtnSection}>
           <Btn type="submit" onClick={buttonHandler}>
             search

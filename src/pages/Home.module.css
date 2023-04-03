@@ -49,3 +49,16 @@
     padding: 1% 3%;
     justify-content: center;
 }
+
+
+@media only screen and (max-width: 768px) {
+  .topPag {
+    margin-top: 3%;
+  }
+  .shopHeading {
+    margin: 0;
+  }
+  .h2 {
+    margin: 4% 0 0;
+  }
+}

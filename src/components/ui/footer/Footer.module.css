@@ -9,6 +9,10 @@
   margin-top: 4%;
 }
 
+.logo {
+  width: "12%"
+}
+
 .footerComponents {
   display: flex;
   flex-direction: row;
@@ -26,4 +30,17 @@
   display: flex;
   justify-content: end;
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    height: auto;
+    padding: 2%;
+  }
+  .footerComponents {
+    flex-direction: column;
+  }
+  .logo {
+    width: 35%;
+  }
 }

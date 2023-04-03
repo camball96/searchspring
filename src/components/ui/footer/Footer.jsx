@@ -9,7 +9,7 @@ function Footer() {
   return (
     <div className={styles.footer}>
       <div className={styles.footerComponents}>
-        <img src={SearchyW} style={{ width: "12%" }} alt="" />
+        <img src={SearchyW} alt="" className={styles.logo} />
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
           <br />

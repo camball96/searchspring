@@ -3,7 +3,6 @@
   top: 0;
   left: 0;
   right: 0;
-  /* background-color: rgba(0, 0, 0, 0.267); */
   backdrop-filter: blur(10px);
   height: 100px;
   display: flex;
@@ -34,6 +33,21 @@
   transform: scale(1.1);
 }
 
-.icon {
 
+
+
+@media only screen and (max-width: 768px){
+  .menu, .BsCart3 {
+    display: none;
+  }
+
+  .cart {
+    padding: 1.5%;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .GiHamburgerMenu {
+    display: none;
+  }
 }

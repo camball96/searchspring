@@ -9,9 +9,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #e9cfca;
+  -webkit-transition: background-color 0.9s ease-out;  /* Saf3.2+, Chrome */
+  -moz-transition: background-color 0.9s ease-out;  /* FF4+ */
+   -ms-transition: background-color 0.9s ease-out;  /* IE10 */
+    -o-transition: background-color 0.9s ease-out;  /* Opera 10.5+ */
+    transition: background-color 0.9s ease-out;
 }
 
-.h1 {
+.h2 {
   font-size: 30px;
   color: var(--text-color-gg);
   font-weight: 600;
@@ -21,10 +26,20 @@
   border-radius: 1px;
 }
 
-.h2 {
+.h1 {
   font-size: 80px;
   color: var(--text-color-gg);
   margin: 2% 0 3%;
-  padding: 0;
+  padding-right: 40%;
 }
 
+@media only screen and (max-width: 768px){
+  .h1 {
+    font-size: 60px;
+    padding-right: 0%;
+  }
+  .h2 {
+    font-size: 25px;
+  }
+
+}
