@@ -1,4 +1,4 @@
-# Searchy Search Page #
+# Searchy Landing Page #
 This is a modern, minimal designed landing product page built using React and MUI. The page features a simple search bar with a search button next to it, allowing users to easily search for products using the Searchspring API. The clean and minimal design puts the focus on the search functionality and search results, making it easy for users to find what they're looking for.
 
 In addition to the search bar, the page includes pagination with next and previous buttons, allowing users to easily navigate through search results. The use of MUI and React Icons provides a modern and intuitive user interface, while the integration with Axios and the Searchspring API ensures that the search functionality is fast and reliable.
