@@ -14,23 +14,11 @@ function Home() {
   const [submittedQuery, setSubmittedQuery] = useState("");
   const [page, setPage] = useState(1);
 
-  // Initial Fetch to populate product page
-  useEffect(() => {
-    const fetchProducts = async () => {
-      const response = await axios.get(
-        `https://api.searchspring.net/api/search/search.json?resultsFormat=native&siteId=scmq7n&q=&resultsPerPage=10&page=0&fields=
-        %2A&sort=%7B%22price%22%3A%22asc%22%7D`
-      );
-      setProducts(response.data.results);
-    };
-    fetchProducts();
-  }, []);
-
   // fetching with query that was inputted to populate products related to query along with page
   useEffect(() => {
     const fetchProducts = async () => {
       const response = await axios.get(
-        `https://api.searchspring.net/api/search/search.json?resultsFormat=native&siteId=scmq7n&q=${query}&resultsPerPage=10&page=${page}&fields=
+        `https://api.searchspring.net/api/search/search.json?resultsFormat=native&siteId=scmq7n&q=${query}&resultsPerPage=13&page=${page}&fields=
         %2A&sort=%7B%22price%22%3A%22asc%22%7D`
       );
       setProducts(response.data.results);
@@ -86,7 +74,7 @@ function Home() {
         <div className={styles.productList} id="products">
           {/* I had to slice here as there was a weird bug occuring on the initial fetch where different
           amounts of products were returned than what was requested. This at least will stop that from occuring. */}
-          {products.slice(0, 9).map((product) => {
+          {products.slice(0, 12).map((product) => {
             return <PCard key={product.id} product={product} />;
           })}
         </div>

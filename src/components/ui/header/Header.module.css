@@ -3,7 +3,8 @@
   top: 0;
   left: 0;
   right: 0;
-  /* background-color: rgba(0, 0, 0, 0.214); */
+  /* background-color: rgba(0, 0, 0, 0.267); */
+  backdrop-filter: blur(10px);
   height: 100px;
   display: flex;
   flex-direction: row;
