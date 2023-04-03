@@ -14,7 +14,7 @@ function Home() {
   const [submittedQuery, setSubmittedQuery] = useState("");
   const [page, setPage] = useState(1);
 
-  // fetching with query that was inputted to populate products related to query along with page
+  // fetching data to populate products related to query along with page
   useEffect(() => {
     const fetchProducts = async () => {
       const response = await axios.get(

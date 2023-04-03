@@ -2,12 +2,17 @@
   display: flex;
   flex-direction: row;
 }
+.searchArea {
+  display: flex;
+  flex-direction: row;
+
+}
 
 .clearBtnSection {
   height: 100%;
   display: flex;
   align-items: center;
-  padding-top: 4%;
+  padding-top: 3%;
   margin-left: -4%;
   z-index: 3;
 }
